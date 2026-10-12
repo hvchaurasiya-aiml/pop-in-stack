@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int stack[5] = {10, 20, 30, 40, 50};
+    int top = 4;
+
+    if (top == -1) {
+        cout << "Stack Underflow";
+    } else {
+        cout << "Popped element: " << stack[top] << endl;
+        top--;
+    }
+
+    cout << "Stack elements: ";
+    for (int i = top; i >= 0; i--) {
+        cout << stack[i] << " ";
+    }
+
+    return 0;
+}
